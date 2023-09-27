@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <audio id="fartSound" src="Sound/fart.mp3"type="audio/mpeg"></audio>
+
+        <style>
+            h1 {
+                border: 10PX SOLID RED;
+                font-size: 200%;
+            }
+            body {background-color: pink;}
+            a:hover {
+             color: green; 
+             text-decoration: underline; 
+            }
+            img:hover {
+        transform: scale(1.1); 
+        border: 2px solid orange; 
+    }
+        </style>
+        <title>WEBSITE NG MGA LAMOK</title> 
+    </head>
+    <body>
+        <h1 style="text-align: center; background-color: blue; color: red; border-radius: 20px;">WEBSITE NG LAMOK</h1>
+        <p style="background-color: aqua; color: azure; font-size: 50px; font-family: 'Courier New', Courier, monospace; border: 2px solid blue; text-align: center; margin-left: 100px; margin-right: 100px; border-radius: 50px;">🦟THE THREE MOSQUITOES🦟</p>
+        <p style="text-align: center; font-size: 12px; margin-top: -30px;">PLAY SOUND AT THE BOTTOM</p>
+        <div style="display: flex;">
+            <div style="text-align: center;">
+                <a href="https://www.facebook.com/profile.php?id=100085349808414" style="font-size: 30PX;" onmouseover="playFartSound()">Clifford Pescadera</a>
+                <img src="IMG/FORD.jpg" alt="youtube.com" width="500" height="500" onmouseover="playFartSound()">
+            </div>
+            <div style="text-align: center;">
+                <a href="https://www.facebook.com/john.zevahc.1" style="font-size: 30PX;" onmouseover="playFartSound()">John Erick Chavez</a>
+                <img src="IMG/icon.jpg" alt="youtube.com" width="500" height="500" onmouseover="playFartSound()">
+            </div>
+            <div style="text-align: center;">
+                <a href="https://www.facebook.com/cjcarl.pactaoin/" style="font-size: 30PX;" onmouseover="playFartSound()">Carl John Pactao-in</a>
+                <img src="IMG/CUTE.jpg" alt="fb.com" width="500" height="500" onmouseover="playFartSound()">
+            </div>
+        </div>
+        <footer style="text-align: center; font-family:'Times New Roman', Times, serif;">CREATED DENGUE @2023</footer>
+        <audio controls loop>
+            <source src="Sound/buzz.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <script>
+            const fartSound = document.getElementById('fartSound');
+            
+            function playFartSound() {
+                fartSound.currentTime = 0; // Reset the sound to the beginning
+                fartSound.play();
+            }
+        </script>
+        
+    </body>   
+</html>
